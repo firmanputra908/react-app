@@ -53,6 +53,8 @@ jobs:
           port: 22
           script: 
             cd apps/react-app/
+            git remote add origin https://github.com/firmanputra908/react-app.git
+            git branch -M main
             git pull origin main
             git status
             git install --only=prod

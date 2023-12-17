@@ -48,7 +48,7 @@ jobs:
           port: 22
           script: 
             cd /root/apps
-            git fetch origin main
+            git pull origin main
             npm ci
             git status
             git install --only=prod

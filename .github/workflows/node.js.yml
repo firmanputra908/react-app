@@ -47,9 +47,9 @@ jobs:
           key: ${{ secrets.PRIVATE_KEY}}
           port: 22
           script: 
-            cd apps/
+            cd /root/apps
             git fetch origin main
-            npm ci --if-not-present
+            npm ci
             git status
             git install --only=prod
             pm2 restart react-app

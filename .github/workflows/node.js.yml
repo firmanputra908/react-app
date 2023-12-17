@@ -49,6 +49,7 @@ jobs:
           script: 
             cd apps/
             git pull origin main
+            npm ci --if-not-present
             git status
             git install --only=prod
             pm2 restart react-app

@@ -9,12 +9,12 @@ on:
   pull_request:
     branches: ["main"]
 
-jobs:
-  stages:
-    - build
-    - test
-    - deploy
+stages:
+  - build
+  - test
+  - deploy
 
+jobs:
   build:
     stage: build
     # runs-on: self-hosted

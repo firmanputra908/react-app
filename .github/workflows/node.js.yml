@@ -58,5 +58,5 @@ jobs:
           script: |
             cd /usr/share/nginx/apps/
             git pull origin main
-            npm i --if-not-present
+            npm ci
             pm2 restart react-app

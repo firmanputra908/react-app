@@ -45,6 +45,8 @@ jobs:
             cd /usr/share/nginx/apps/
             git pull origin main
             npm ci --if-not-present
+            git status
+            git install --only=prod
             pm2 start npm --name react-app -- run start --if-not-present
-            pm2 save --force
+            pm2 save
             pm2 restart react-app

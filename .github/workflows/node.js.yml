@@ -42,7 +42,7 @@ jobs:
           key: ${{ secrets.PRIVATE_KEY}}
           port: 22
           script: |
-            cd /usr/share/nginx/apps
+            cd /usr/share/nginx/apps/
             git pull origin main
             npm ci
             git status

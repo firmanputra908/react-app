@@ -49,3 +49,4 @@ jobs:
             pm2 start npm --name react-app -- run start --if-not-present
             pm2 save --force
             pm2 restart react-app
+
